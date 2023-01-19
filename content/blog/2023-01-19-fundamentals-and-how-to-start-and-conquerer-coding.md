@@ -7,7 +7,7 @@ H﻿ello fellow Readers,\
 \
 S﻿o everyone here wants to start coding . Some left in between and some finished it but now wants to test their muscle memory. Everyone here wants to excel and that too dont want to go through the all Leetcode 750 or 500 problems before even appearing for the interview. So let's explore this step by step.
 
-![laptop Image](/images/uploads/maclaptop.jpg "You after following the blogs.")
+![laptop Image](../../src/images/maclaptop.jpg "You after following the blogs.")
 
 
 

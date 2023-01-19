@@ -12,7 +12,7 @@ module.exports = {
     title: `Kanishk Coding 101`,
     author: {
       name: `Kanishk Verma`,
-      summary: `who lives and works in Goldman Sachs trying to drag through everyday.`,
+      summary: `Works in Goldman Sachs and trying to share little knowledge i have.`,
     },
     description: `Coding 101 : How i didnt learn and wished to do things`,
     siteUrl: `https://www.linkedin.com/in/kanishkverma97/`,
@@ -110,7 +110,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Kanishk Coding Strategy`,
+        name: `Kanishk Coding Strategies .`,
         short_name: `Kanishk`,
         start_url: `/`,
         background_color: `#ffffff`,
@@ -118,7 +118,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `/src/images/KanishkLogo.png`, // This path is relative to the root of the site.
+        icon: `./src/images/KanishkLogo.png`, // This path is relative to the root of the site.
       },
     },
   ],
