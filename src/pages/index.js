@@ -30,12 +30,14 @@ const BlogIndex = ({ data, location }) => {
   }
     )
   )]; // [ 'DSA', 'SystemDesign']
+
+  uniqueCategories.unshift('All');
+
   if(currentCategory === "" || currentCategory === undefined) {
     setCurrentCategory(uniqueCategories[0]);
   }
 
   function categoryChangeHandler(selectedCategory) {
-    console.log("selectedCategory = " + selectedCategory);
     setCurrentCategory(selectedCategory);
   }
 
@@ -55,10 +57,11 @@ const BlogIndex = ({ data, location }) => {
       </ul>
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
+          
           const title = post.frontmatter.title || post.fields.slug
           const category = post.frontmatter.category;
-          console.log("currentCategory = " + currentCategory);
-          if(( currentCategory !== "" || currentCategory !== undefined) && category !== currentCategory) {
+          console.log("currentCategory = " + currentCategory + " compare = "+ (currentCategory !== 'All'));
+          if((currentCategory !== "" || currentCategory !== undefined) && (category !== currentCategory && currentCategory !== 'All')) {
             return ;
           }
           return (
