@@ -329,3 +329,67 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+.category-container {
+  margin: 0px -1.21875rem;
+  border-color: #ecf0f2;
+    border-style: solid;
+    border-width: 1px 6px;
+    background-color: #f4f7f8;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    line-height: 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    z-index: 1;
+    padding: 6px 20px;
+}
+
+.category-container .item  {
+  display: inline-block;
+    margin: 0.25rem 6px 0.25rem 0;
+    border-radius: 15px;
+    white-space: normal;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #ecf0f2;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.category-container .item div {
+  display: block;
+  padding: 14px 16px 16px;
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+
+.category-container .item[aria-selected=true] div {
+  border: 2px solid #909da1;
+  border-radius: 15px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(144, 157, 161);
+  border-right-color: rgb(144, 157, 161);
+  border-bottom-color: rgb(144, 157, 161);
+  border-left-color: rgb(144, 157, 161);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}

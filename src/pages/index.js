@@ -1,14 +1,16 @@
 import * as React from "react"
+
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import CustomCategoryContainer from "../components/CustomCategoryContainer"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.posts.nodes;
-  const tagCategory = data.tagsGroup;
+  const [currentCategory, setCurrentCategory] = React.useState();
   
   if (posts.length === 0) {
     return (
@@ -23,19 +25,42 @@ const BlogIndex = ({ data, location }) => {
     )
   }
 
+  const uniqueCategories = [...new Set(posts.map(item => {
+    return item.frontmatter.category;
+  }
+    )
+  )]; // [ 'DSA', 'SystemDesign']
+  if(currentCategory === "" || currentCategory === undefined) {
+    setCurrentCategory(uniqueCategories[0]);
+  }
+
+  function categoryChangeHandler(selectedCategory) {
+    console.log("selectedCategory = " + selectedCategory);
+    setCurrentCategory(selectedCategory);
+  }
+
   return (
     <Layout location={location} title={siteTitle}>
       <Bio />
-      <ol style={{ listStyle: `none` }}>
+      <ul className="category-container" role = "tablist" id="category">
       {
-          posts.map( post => {
-            console.log("post -category = " + post.frontmatter.category);
-            return (<div key = {post.fields.slug}>{post.frontmatter.category}</div>)
+          uniqueCategories.map(category => {
+            return (
+              <CustomCategoryContainer id={category} activeCategory ={currentCategory} key = {category}
+              categoryChangeHandler={categoryChangeHandler}
+              />
+            )
           })
         }
+      </ul>
+      <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
-
+          const category = post.frontmatter.category;
+          console.log("currentCategory = " + currentCategory);
+          if(( currentCategory !== "" || currentCategory !== undefined) && category !== currentCategory) {
+            return ;
+          }
           return (
             <li key={post.fields.slug}>
               <article
