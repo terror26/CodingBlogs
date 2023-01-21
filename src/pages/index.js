@@ -7,8 +7,9 @@ import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
+  const posts = data.posts.nodes;
+  const tagCategory = data.tagsGroup;
+  
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
@@ -26,6 +27,12 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Bio />
       <ol style={{ listStyle: `none` }}>
+      {
+          posts.map( post => {
+            console.log("post -category = " + post.frontmatter.category);
+            return (<div key = {post.fields.slug}>{post.frontmatter.category}</div>)
+          })
+        }
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -77,7 +84,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    posts : allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         excerpt
         fields {
@@ -87,6 +94,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          category
         }
       }
     }

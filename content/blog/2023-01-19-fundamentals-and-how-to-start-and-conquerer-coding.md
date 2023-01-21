@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Fundamentals And how to start and conquerer coding
+category: "DSA"
 date: 2023-01-19T15:59:33.999Z
 ---
 H﻿ello fellow Readers,\
