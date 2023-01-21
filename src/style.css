@@ -245,7 +245,8 @@ a:focus {
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
-  margin-bottom: var(--spacing-20);
+  margin-bottom: var(--spacing-12);
+
 }
 
 .global-header {
@@ -329,7 +330,7 @@ a:focus {
     list-style-position: inside;
   }
 }
-
+/* ----------------- Category container begins ---------------- */
 .category-container {
   margin: 0px -1.21875rem;
   border-color: #ecf0f2;
@@ -392,4 +393,47 @@ a:focus {
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
+}
+
+/* ----------------- Category container ends ---------------- */
+
+/* ------------------ Little CSS begins ----------------- */
+
+.author-name-content {
+  color: navy;
+  display: inline-block;
+  font-size: 85%;
+  padding: 2px 6px;
+  font-weight: bolder;
+  border-radius: 8px;
+  transform-origin: center;
+  animation: flutter 2s linear infinite;
+}
+
+/* ------------------ Little CSS ends ----------------- */
+
+.author-introduction {
+  color: #7d7d7d;
+  background-color: #fff;
+  margin-top: 4px;
+  font-size: 80%;
+  line-height: 1.4;
+}
+.author-href {
+  background-color: #f4f7f8;
+  padding-right: 10px;
+  color: navy;
+  font-weight: bolder;
+  display: inline-block;
+  animation: wiggle 2s infinite;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
 }

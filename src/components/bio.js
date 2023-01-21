@@ -44,10 +44,11 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Created and Maintained by <strong>{author.name}</strong> <br/> 
+          <p className="author-introduction" > {author?.summary || null} </p>
           {` `}
-          <a href={`https://www.linkedin.com/in/kanishkverma97/`}>
-            You should follow them on Linkedin
+          <a href={`https://www.linkedin.com/in/kanishkverma97/`} className = "author-href">
+            @KanishkVerma97
           </a>
         </p>
       )}
