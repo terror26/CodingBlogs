@@ -4,12 +4,21 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Comments from "../components/Comments"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
 }) => {
   const siteTitle = site.siteMetadata?.title || `Title`;
+
+  <script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -57,6 +66,7 @@ const BlogPostTemplate = ({
           </li>
         </ul>
       </nav>
+      <Comments />
     </Layout>
   )
 }
