@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import CustomCategoryContainer from "../components/CustomCategoryContainer"
+import NavigationBar from "../components/NavigationBar"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -42,6 +43,8 @@ const BlogIndex = ({ data, location }) => {
   }
 
   return (
+    <React.Fragment>
+    <NavigationBar />
     <Layout location={location} title={siteTitle}>
       <Bio />
       <ul className="category-container" role = "tablist" id="category">
@@ -93,6 +96,7 @@ const BlogIndex = ({ data, location }) => {
         })}
       </ol>
     </Layout>
+    </React.Fragment>
   )
 }
 

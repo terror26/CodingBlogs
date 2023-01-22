@@ -32,7 +32,6 @@ const BlogPostTemplate = ({
           <p>{post.frontmatter.date}</p>
         </header>
         <div style={{'line-height':'8%','background-color':'grey', 'margin-bottom':'30px'}}>
-          <br />
         </div>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}

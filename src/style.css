@@ -246,7 +246,6 @@ a:focus {
 
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-12);
-
 }
 
 .global-header {
@@ -334,31 +333,31 @@ a:focus {
 .category-container {
   margin: 0px -1.21875rem;
   border-color: #ecf0f2;
-    border-style: solid;
-    border-width: 1px 6px;
-    background-color: #f4f7f8;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    line-height: 0;
-    white-space: nowrap;
-    overflow-x: scroll;
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    z-index: 1;
-    padding: 6px 20px;
+  border-style: solid;
+  border-width: 1px 6px;
+  background-color: #f4f7f8;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  line-height: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  z-index: 1;
+  padding: 6px 20px;
 }
 
-.category-container .item  {
+.category-container .item {
   display: inline-block;
-    margin: 0.25rem 6px 0.25rem 0;
-    border-radius: 15px;
-    white-space: normal;
-    box-sizing: border-box;
-    cursor: pointer;
-    border: 1px solid #ecf0f2;
-    background-color: #fff;
-    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  margin: 0.25rem 6px 0.25rem 0;
+  border-radius: 15px;
+  white-space: normal;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid #ecf0f2;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
 }
 
 .category-container .item div {
@@ -372,8 +371,7 @@ a:focus {
   box-sizing: border-box;
 }
 
-
-.category-container .item[aria-selected=true] div {
+.category-container .item[aria-selected="true"] div {
   border: 2px solid #909da1;
   border-radius: 15px;
   border-top-width: 2px;
@@ -412,6 +410,44 @@ a:focus {
 
 /* ------------------ Little CSS ends ----------------- */
 
+/* ------------------ Top Navigation CSS begins ----------------- */
+#nav {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+  list-style: none;
+  background-image: linear-gradient(72deg,#291e95,#cc007a);
+}
+#nav li {
+  padding-top: 10px;
+    padding-bottom: 10px;
+  float: left;
+  display: block;
+  color: #666;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+}
+#nav li a {
+  text-decoration: none;
+  font-family: Catamaran;
+}
+
+#nav li div {
+  font-size: x-large;
+  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: lightgray;
+  font-size: x-large;
+  box-sizing: border-box;
+}
+
+
+/* ------------------ Top Navigation CSS ends ----------------- */
 .author-introduction {
   color: #7d7d7d;
   background-color: #fff;
@@ -431,9 +467,19 @@ a:focus {
 }
 
 @keyframes wiggle {
-  0% { transform: rotate(0deg); }
- 80% { transform: rotate(0deg); }
- 85% { transform: rotate(5deg); }
- 95% { transform: rotate(-5deg); }
-100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
