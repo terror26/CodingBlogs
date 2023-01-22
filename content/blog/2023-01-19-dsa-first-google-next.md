@@ -55,8 +55,7 @@ Implement hashMap , follow up questions : what is the load factor , java 8 impro
 * Inorder , preOrder and PostOrder : Note recursion one is fine but try to implement this using the stacks. 
 * LCA : Lowest common Ancestor: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/ , Pretty popular question and must to have its good understanding.  
 * Kth largest data in a Stream: https://leetcode.com/problems/kth-largest-element-in-a-stream/ . Space complexity for each query : O(k), time Complexity O(logK).
-
-  \*﻿ Sort Almost Sorted Array : https://www.geeksforgeeks.org/nearly-sorted-algorithm/ , Do work your way to the optimal solution.
+*  Sort Almost Sorted Array : https://www.geeksforgeeks.org/nearly-sorted-algorithm/ , Do work your way to the optimal solution.
 
 ```
 Will add more to the list with time. :) 
