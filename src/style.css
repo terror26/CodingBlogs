@@ -483,3 +483,13 @@ a:focus {
     transform: rotate(0deg);
   }
 }
+
+.ResumeDisplay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.ResumeDisplay iframe {
+  height: 100%;
+  width: 100%;
+}
