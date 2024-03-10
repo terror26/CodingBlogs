@@ -1,3 +1,10 @@
+---
+layout: blog
+title: "Java Iterator Pattern"
+date: 2024-02-13T09:31:35.946Z
+category: System Design
+---
+
 ***Java Iterator Pattern***
 
 **Usage**: 

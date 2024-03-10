@@ -1,3 +1,9 @@
+---
+layout: blog
+title: "SOLID PATTERN"
+date: 2024-02-13T01:31:35.946Z
+category: System Design
+---
 **SOLID PATTERN**
 1. **Single Responsibility Principle (SRP)**:
 
