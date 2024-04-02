@@ -56,6 +56,7 @@ logging.level.com.netflix.discovery=OFF
 
 3. Add `@EnableEurekaServer` to the top of your main class.
 
+--> Github url for the eurekaServer : https://github.com/terror26/eurekaServer 
 #### Eureka Client
 
 1. Add the dependency in your `pom.xml`:
@@ -75,6 +76,17 @@ logging.level.com.netflix.discovery=OFF
 Now, when you run your client on port 8080, `localhost:8761` should show the instance in the list.
 
 Now for the persistent ones on making this far 
+
+2. Add the following properties to application.properties
+
+```properties
+spring.application.name=eureka-client
+server.port=0
+eureka.client.service-url.default-zone=http://localhost:8761/eureka
+```
+
+GitHub URL for Eureka Client : https://github.com/terror26/eureka-Client
+
 ### Bonus: Making an API Call
 Add the following `RestController` code to your Spring client project:
 
