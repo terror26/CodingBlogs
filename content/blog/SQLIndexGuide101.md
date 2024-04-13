@@ -1,11 +1,11 @@
 ---
 layout: blog
-title: "CODE Index Guide 101"
+title: "SQL Index Guide 101"
 date: 2024-04-13T01:31:35.946Z
 category: System Design
 ---
 
-## CODE Index Guide 101
+## SQL Index Guide 101
 
 Understanding optimization is crucial for developers, even when it comes to databases. Some might argue that backend developers don't need to know DBA things, but that's a misconception.
 
