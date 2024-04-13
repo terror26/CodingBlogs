@@ -104,7 +104,7 @@ What exactly is a clustered index?
 Technically: A clustered index is an index in a database management system (DBMS) where the rows of a table are stored in the same order as the index key. This means that the data in the table is physically sorted on disk based on the values of the indexed column(s). In other words, the index defines the physical order of the rows in the table. Lets understand this by diagram.
 
 
-![Clustered Index](https://github.com/terror26/images/blob/main/Clustered%20index.png?raw=true)
+![Clustered Index](https://github.com/terror26/images/blob/main/Clustered%20index.png?raw=true){: width="100%" height="100%"}
 
 
 As you can see the blue Block i.e. index values are sorted and so the pointer to the disk block is also sorted i.e if field 1 ptr location is 42nd position so next value pointer will be greater than 42nd position itself.
@@ -115,7 +115,7 @@ As you can see the blue Block i.e. index values are sorted and so the pointer to
 **Uncluster
 
 In short: Disk block order are not sorted.
-![UnClustered Index](https://github.com/terror26/images/blob/main/Unclustered%20Index.png?raw=true)
+![UnClustered Index](https://github.com/terror26/images/blob/main/Unclustered%20Index.png?raw=true){: width="100%" height="100%"}
 
 Digging Deeper for both : 
 B-tree for Clustered Index() on EmpId:
