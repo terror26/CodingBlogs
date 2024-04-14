@@ -1,11 +1,17 @@
-import React, { useState } from "react"
+import React, { useState } from 'react';
+import NavigationBar from "../components/NavigationBar"
+
 
 const aboutMe = (props) => {
   console.log(props);
-    return (
-        <div class="ResumeDisplay">
-        <iframe src="https://imgur.com/MKPn25E"/>   
-        </div>      
-    )
+  return (
+    <React.Fragment>
+    <NavigationBar />
+    <div>
+    <img src="https://i.imgur.com/kmUwBAn.png" alt="Resume" height="auto" width="70%" />      
+    </div>
+    </React.Fragment>
+  );
 };
-export default aboutMe
+
+export default aboutMe;
