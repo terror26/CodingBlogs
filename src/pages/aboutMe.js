@@ -8,7 +8,7 @@ const aboutMe = (props) => {
     <React.Fragment>
     <NavigationBar />
     <div>
-    <img src="https://i.imgur.com/kmUwBAn.png" alt="Resume" height="auto" width="70%" />      
+    <img src="https://i.imgur.com/IAmjUoe.png" alt="Resume" height="auto" width="70%" />      
     </div>
     </React.Fragment>
   );
