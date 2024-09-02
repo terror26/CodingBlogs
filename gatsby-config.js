@@ -12,7 +12,7 @@ module.exports = {
     title: `Kanishk Coding 101`,
     author: {
       name: `Kanishk Verma`,
-      summary: `Works in Goldman Sachs and trying to share little knowledge I have.`,
+      summary: `Works in Google and trying to share little knowledge I have.`,
     },
     description: `Coding 101 : How i didnt learn and wished to do things`,
     siteUrl: `https://www.linkedin.com/in/kanishkverma97/`,
